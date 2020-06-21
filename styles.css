@@ -17,6 +17,10 @@ body {
 img {
     width: 100%;
 }
+
+.hero-desktop {
+    display: none;
+}
 /***MAIN STYLES***/
 .content-container {
     background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 97%));
@@ -103,4 +107,46 @@ input::placeholder {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+/***MEDIA QUERIES***/
+@media (min-width: 768px) {
+    .hero-mobile {
+        display: none;
+    }
+    .hero-desktop {
+        display: block;
+        object-fit: contain;
+    }
+    .title {
+        font-size: 2.9rem;
+    }
+    .dark-title {
+        font-size: 2.5rem;
+        letter-spacing: 1.1rem;
+    }
+    .desc {
+        font-size: 1.1rem;
+        padding: 0 7rem;
+    }
+    .btn {
+        left: 30rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .btn {
+        left: 37rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .btn {
+        left: 47rem;
+    }
+    .input-email {
+        padding: .7rem 10rem .7rem 1.5rem;
+    }
+    .desc {
+        padding: 0 23rem;
+    }
 }
