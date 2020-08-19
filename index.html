@@ -3,49 +3,50 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- MAIN STYLE SHEETS -->
-  <link rel="stylesheet" href="styles.css" type="text/css">
+
+  <!-- CSS  & NORMALIZE STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 
 <body>
-  <div class="content-container">
-
-    <div class="logo">
-      <img src="images/logo.svg" alt="base apparel logo">
+  <div class="content-wrapper">
+    <header class="logo-wrapper">
+      <img src="images/logo.svg" alt="base apparel logo" class="logo-img">
+    </header>
+    <div class="hero-wrapper">
+      <img src="images/hero-mobile.jpg" alt="model posing" class="model-small">
+      <img src="images/hero-desktop.jpg" alt="model posing" class="model-big">
     </div>
-
-    <img src="images/hero-mobile.jpg" alt="model posing" class="hero-mobile">
-    <img src="images/hero-desktop.jpg" alt="model posing" class="hero-desktop">
-
-    <main class="content-desc">
-      <h1 class="title">We're
-        <span class="dark-title">coming <span class="dark-title">soon</span></span>
-      </h1>
-      <p class="desc">
-        Hello fellow shoppers! We're currently building our new fashion store. 
-        Add your email below to stay up-to-date with announcements and our launch deals.
-      </p>
+    <main class="page-content">
+      <h1 class="page-title">WE'RE <br> <span class="subtitle">COMING <br> SOON</span></h1>
+      <p class="page-desc">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form action="#" class="form">
+        <label for="email">Email</label>
+        <input type="text" name="email" class="email" placeholder="Email Address">
+        <button type="submit" class="btn">
+          <img src="images/icon-arrow.svg" alt="right pointing arrow" class="arrow">
+        </button>
+        <p class="error-msg">Please provide a valid email</p>
+        <img src="images/icon-error.svg" alt="error icon" class="error-icon">
+      </form>
     </main>
-
-    <div class="input">
-      <input type="email" placeholder="Email Address" class="input-email">
-      <a href="#" class="btn"><img src="images/icon-arrow.svg" alt="input arrow" class="input-arrow"></a>
-    </div>
-    
-
-    <footer>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
   </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">SJ Nosrat</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
